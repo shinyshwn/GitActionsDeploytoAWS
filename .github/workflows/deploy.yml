@@ -3,16 +3,10 @@ name: Build and Deploy
 on:
   workflow_dispatch: {}
 
-  - name: Echo AWS Region
-  run: echo "AWS Region: ${{ env.AWS_REGION }}"
-
 env:
   applicationfolder: spring-boot-hello-world-example
   AWS_REGION: us-east-1
   S3BUCKET: codedeploystack-webappdeploymentbucket-a5d6d6ndqy6a
-
-- name: Echo AWS Region
-  run: echo "AWS Region: ${{ env.AWS_REGION }}"
 
 
 jobs:
